@@ -15,6 +15,10 @@
             this.qteMovimento = 0;
         }
 
+        public void incrementarQteMoviemntos()
+        {
+            qteMovimento++;
+        }
     }
 
 

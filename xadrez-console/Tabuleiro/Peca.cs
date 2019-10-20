@@ -1,6 +1,6 @@
 ﻿namespace tabuleiro
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
@@ -14,11 +14,11 @@
             this.cor = cor;
             this.qteMovimento = 0;
         }
-
         public void incrementarQteMoviemntos()
         {
             qteMovimento++;
         }
+        public abstract bool[,] movimentosPossiveis();
     }
 
 
